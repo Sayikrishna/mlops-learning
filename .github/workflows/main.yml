@@ -91,4 +91,5 @@ jobs:
       - name: Upload model artifact
         uses: actions/upload-artifact@v3
         with:
-          name: model-artifact-${{ github.run_id }}-${{ matrix.python-version }}
+          name: ml-artifacts-${{ matrix.python }}-${{ github.run_id }}
+          path: artifacts
